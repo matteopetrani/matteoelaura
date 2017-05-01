@@ -17,6 +17,7 @@
 # Build settings
 markdown: kramdown
 
+source: .
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://matteopetrani.gihub.io/matteoelaura" # the base hostname & protocol for your site
 
