@@ -6,6 +6,60 @@
 // Custom styles
 @import "bulma";
 
+// Typography
+@font-face {
+  font-family: futura;
+  srd: url("/fonts/FuturaStd-Book.otf");
+  font-weight: normal;
+}
+@font-face {
+  font-family: futura;
+  srd: url("/fonts/FuturaStd-Medium.otf");
+  font-weight: 600;
+}
+@font-face {
+  font-family: bigcaslon;
+  srd: url("/fonts/BigCaslon-Rom.otf");
+  font-weight: normal;
+}
+
+$font-color: #303937;
+$pink: #629080;
+$magenta: #EC918E;
+
+body {
+  color: $font-color !important;  
+  font-size: 1.3rem;
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: bigcaslon;
+  margin: 1rem auto 1.5rem;
+}
+
+h4 {
+  color: $pink !important;
+}
+
+p {
+  font-family: futura;
+  font-weight: 500;
+}
+
+.hour {
+  font-family: futura;
+  color: $magenta !important;
+  font-weight: 500;
+  letter-spacing: 1.25;
+  margin-bottom: 0.5rem !important;
+}
+
+.location {
+  margin: 0 !important;
+}
+
+
+// GOOGLE MAPS
 .map-container {
 	width: 100%;
 }
@@ -18,3 +72,4 @@
 .map-container iframe.clicked{
 	pointer-events: auto;
 }
+
