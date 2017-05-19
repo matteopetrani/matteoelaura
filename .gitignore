@@ -1,9 +1,3 @@
 .sass-cache
 .jekyll-metadata
-/_includes
-/_posts
-/css
-/fonts
-/img
-/js
-/node_modules
+/_site
