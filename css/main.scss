@@ -7,24 +7,9 @@
 @import "bulma";
 
 // Typography
-@font-face {
-  font-family: futura;
-  srd: url("/fonts/FuturaStd-Book.otf");
-  font-weight: normal;
-}
-@font-face {
-  font-family: futura;
-  srd: url("/fonts/FuturaStd-Medium.otf");
-  font-weight: 600;
-}
-@font-face {
-  font-family: bigcaslon;
-  srd: url("/fonts/BigCaslon-Rom.otf");
-  font-weight: normal;
-}
-
 $font-color: #303937;
-$pink: #629080;
+$green: #629080;
+$pink: #FDE2DF;
 $magenta: #EC918E;
 
 body {
@@ -33,17 +18,44 @@ body {
 }
 
 h1, h2, h3, h4, h5 {
-  font-family: bigcaslon;
+  font-family: 'Playfair Display', serif;
   margin: 1rem auto 1.5rem;
 }
 
 h4 {
-  color: $pink !important;
+  color: $green !important;
+  letter-spacing: 2;
 }
 
 p {
-  font-family: futura;
+  font-family: "futura-pt", sans-serif;
   font-weight: 500;
+}
+
+.button {
+  border: none;
+  border-radius: 0;
+  background-color: $pink;
+  padding: 30px 30px;
+  font-family: "futura-pt";
+  font-weight: 500;
+  letter-spacing: 2;
+  font-size: 1.2rem;
+  color: $green;
+  box-shadow: 5px 5px $magenta;
+  margin-top: 16px;
+  
+  &:hover, &:focus {
+    color: $magenta;
+    border: none;
+  }
+  
+  &:active {
+    background-color: $magenta;
+    color: $pink;
+    border: none;
+    box-shadow: 5px 5px $pink;
+  }
 }
 
 .hour {
@@ -62,6 +74,8 @@ p {
 // GOOGLE MAPS
 .map-container {
 	width: 100%;
+  box-shadow: 5px 5px $green;
+  margin: 56px auto;
 }
 .map-container iframe{
 	width: 100%;
